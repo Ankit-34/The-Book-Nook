@@ -1,0 +1,39 @@
+.logo{
+    height: fit-content;
+}
+
+.searchbar{
+    width: 40%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.search{
+    width: 100%;
+}
+
+.noti{
+    height: fit-content;
+    width: 60px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.s_icon{
+    margin: auto 0px;
+    cursor: pointer;
+    transform: translateX(-150%);
+}
+
+.user{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user p{
+    margin-left: 8px;
+}

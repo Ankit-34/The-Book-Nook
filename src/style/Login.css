@@ -1,0 +1,17 @@
+.lemail, .lpassword{
+    margin: 15px !important;
+}
+
+.form-container{
+    border: 2px solid grey !important;
+    margin: 20px auto !important;
+}
+
+.btn-login{
+    width: 50% !important;
+    margin: 0 auto !important;
+}
+.btn-login:hover{
+    background-color: rgb(69, 167, 247) !important;
+    color: white !important;
+}

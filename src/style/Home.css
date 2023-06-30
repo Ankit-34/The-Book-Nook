@@ -1,0 +1,65 @@
+.Header{
+    display: flex;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_part{
+    width: 60%;
+    margin: 0px auto;
+}
+
+
+.left_part div{
+    margin: 0px auto;
+}
+
+.tagline{
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+    width: 95%;
+    font-family: 'Lato', sans-serif;
+    color: rgb(4, 47, 73);
+    float: right;
+}
+
+.left_part div button{
+    width: 25%;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 15px;
+    background-color: rgba(4, 47, 73, 0.8);
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    /* float: right; */
+}
+
+.left_part div button:hover{
+    transform: scale(1.05);
+    transition: transform .5s ease-in-out;
+}
+
+.left_part div button:active{
+    box-shadow: 3px 3px 3px rgb(86, 85, 85);
+}
+
+.right_part{
+    width: 40%;
+    text-align: center;
+}
+
+.right_part img{
+    width: 80%;
+    height: 90%;
+}
