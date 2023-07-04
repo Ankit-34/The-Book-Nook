@@ -1,0 +1,75 @@
+.bookCard {
+    /* box-shadow: 1px 1px 2px rgb(0, 0, 0); */
+    border-radius: 10px;
+    width: 150px;
+    /* height: 250px; */
+    /* text-align: center; */
+    /* height: 360px; */
+    height: 300px;
+    margin: 15px;
+    font-family: 'Eczar',
+        serif;
+    font-family: 'Roboto',
+        sans-serif;
+    padding: 10px;
+}
+
+.bookImg img {
+    border-radius: 10px;
+    aspect-ratio: 3/4;
+    width: 150px;
+    height: 200px;
+}
+
+.bookContent {
+    text-align: center;
+}
+
+.bookName {
+    color: rgb(6, 139, 144);
+    font-size: large;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0px auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.bookCat {
+    margin: 3px 0;
+    padding: 5px;
+    letter-spacing: 1px;
+    color: grey;
+
+}
+
+.bookDesc {
+    margin: 3px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.bookPrice {
+    margin: 0;
+    padding: 5px;
+}
+
+.bookCard button {
+    margin: 3px auto;
+    text-align: center;
+    background-color: rgb(198, 193, 193);
+    letter-spacing: 1px;
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}

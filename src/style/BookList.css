@@ -1,0 +1,9 @@
+.bookList {
+    width: 95%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+}

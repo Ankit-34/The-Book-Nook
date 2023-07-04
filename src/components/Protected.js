@@ -8,6 +8,7 @@ const Protected = (props) => {
 
     useEffect(() => {
       const status = JSON.parse(localStorage.getItem("isLoggedIn"));
+      console.log(" LogIn Token : ", status);
         if (status) navigate("/");
         else navigate("/login");
     },[]);

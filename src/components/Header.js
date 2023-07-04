@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React from 'react'
 import '../style/Header.css'
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
@@ -7,25 +7,23 @@ import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import {Link} from 'react-router-dom'
+import { useSelector } from 'react-redux';
 
 const Header = ({cartCount}) => {
-
-    // const state = { data: user };
-    // console.log("Here present :::" , user);
-    
+    const username = useSelector(item => item.user.name)
   return (
     <div className="Header">
-        <div className="logo">Book Store</div>
+        <div className="logo">The Book Nook</div>
 
         <div className="searchbar">
           <TextField className="search" id="standard-basic" label="Search" variant="filled" />
           <SearchOutlinedIcon className="s_icon" onClick={()=>{console.log("Hii")}} />
         </div>
 
-        {/* <div className="user">
+        <div className="user">
             <div className='noti'>
-            <Badge badgeContent={user?.items?.length || 0} color="error">
-                <Link to="/cart" state={user}>
+            <Badge badgeContent={0} color="error">
+                <Link to="/cart">
                     <ShoppingCartIcon/>
                 </Link>
               </Badge>
@@ -33,8 +31,8 @@ const Header = ({cartCount}) => {
           <Stack direction="row" spacing={2}>
             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
           </Stack>
-          <p>{user?.username}</p>
-        </div> */}
+          <p>{username}</p>
+        </div>
       </div>
   )
 }
