@@ -59,9 +59,8 @@ const Login = () => {
   // console.log(errors);
   return (
     <div>
-      {" "}
-      {/* {isLoggedIn && <h3>Already LoggedIn...Logout First </h3>} */}{" "}
-      <h1> Login </h1>{" "}
+      {/* {isLoggedIn && <h3>Already LoggedIn...Logout First </h3>} */}
+      <h1> Login </h1>
       <form className="form-container" onSubmit={handleSubmit}>
         <TextField
           name="email"
@@ -73,8 +72,8 @@ const Login = () => {
           value={values.email}
           onBlur={handleBlur}
           onChange={handleChange}
-        ></TextField>{" "}
-        {errors.email && touched.email ? <p> {errors.email} </p> : null}{" "}
+        ></TextField>
+        {errors.email && touched.email ? <p> {errors.email} </p> : null}
         <TextField
           name="password"
           label="Password"
@@ -85,20 +84,20 @@ const Login = () => {
           value={values.password}
           onBlur={handleBlur}
           onChange={handleChange}
-        ></TextField>{" "}
+        ></TextField>
         {errors.password && touched.password ? (
           <p> {errors.password} </p>
-        ) : null}{" "}
+        ) : null}
         <Button variant="outlined" className="btn-register" type="submit">
-          Login{" "}
-        </Button>{" "}
-        {isLoggedIn && <h3 style={{ color: "red" }}> Login Failed... </h3>}{" "}
-      </form>{" "}
+          Login
+        </Button>
+        {isLoggedIn && <h3 style={{ color: "red" }}> Login Failed... </h3>}
+      </form>
       <div>
         <p>
-          Don 't Have an account ?<Link to="/register">Create Now</Link>{" "}
-        </p>{" "}
-      </div>{" "}
+          Don't Have an account ?<Link to="/register">Create Now</Link>
+        </p>
+      </div>
     </div>
   );
 };

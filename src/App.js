@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cart from "./components/Cart";
 import Header from "./components/Header";
+import AddBook from "./components/AddBook"
 import { Provider } from "react-redux";
 import store from "./Store/store";
 
@@ -21,7 +22,7 @@ const App = () => {
           <Header />
           <Routes>
             <Route path="/" element={<Protected Content={Home} />}></Route>
-            {/* <Route path="/" element={<Home />}></Route> */}
+            <Route path="/add-book" element={<AddBook />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/register" element={<Register />}></Route>
             {/* <Route path="/cart" element={<Protected Content={Cart} />}></Route> */}
