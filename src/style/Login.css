@@ -1,3 +1,12 @@
+.login_outer{
+    display: flex;
+    flex-direction: column !important;
+    column-gap: 20px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
 .lemail, .lpassword{
     margin: 15px !important;
 }
@@ -5,10 +14,16 @@
 .form-container{
     border: 2px solid grey !important;
     margin: 20px auto !important;
+     display: flex;
+     flex-direction: column !important;
+     column-gap: 20px;
+     align-items: center;
+     justify-content: center;
+     width: 40%;
 }
 
 .btn-login{
-    width: 50% !important;
+    width: 30% !important;
     margin: 0 auto !important;
 }
 .btn-login:hover{

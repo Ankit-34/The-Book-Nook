@@ -58,9 +58,9 @@ const Login = () => {
 
   // console.log(errors);
   return (
-    <div>
+    <div className="login_outer">
       {/* {isLoggedIn && <h3>Already LoggedIn...Logout First </h3>} */}
-      <h1> Login </h1>
+      <h1> Login</h1>
       <form className="form-container" onSubmit={handleSubmit}>
         <TextField
           name="email"
@@ -72,7 +72,8 @@ const Login = () => {
           value={values.email}
           onBlur={handleBlur}
           onChange={handleChange}
-        ></TextField>
+        >
+        </TextField>
         {errors.email && touched.email ? <p> {errors.email} </p> : null}
         <TextField
           name="password"
@@ -88,7 +89,7 @@ const Login = () => {
         {errors.password && touched.password ? (
           <p> {errors.password} </p>
         ) : null}
-        <Button variant="outlined" className="btn-register" type="submit">
+        <Button variant="outlined" className="btn-login" type="submit">
           Login
         </Button>
         {isLoggedIn && <h3 style={{ color: "red" }}> Login Failed... </h3>}

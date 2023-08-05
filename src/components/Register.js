@@ -73,7 +73,7 @@ const Register = () => {
   // console.log(errors);
   return (
     <div>
-      <h1> Register </h1>{" "}
+      <h1 style={{width: "100%", textAlign:"center"}}> Register </h1>
       <form className="form-container" onSubmit={handleSubmit}>
         <TextField
           name="email"

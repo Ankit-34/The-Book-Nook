@@ -3,7 +3,7 @@ import '../style/BookList.css'
 import React, { useEffect, useState } from 'react'
 import Card from './Card';
 
-const BookList = () => {
+const BookList = (props) => {
 
     const [bookList, setBookList] = useState([]);
 
@@ -19,16 +19,18 @@ const BookList = () => {
     }, []);
 
   return (
-    <div className='bookList'>
-
-        {
-            bookList.map((book) => {
-                return <Card book={book} />
-            })
-        }
-
+    <div className="bookList">
+      {
+    //   props
+    //     ? props.bookList.map((book) => {
+    //         return <Card book={book} />;
+    //       })
+    //     : 
+        bookList.map((book) => {
+            return <Card book={book} />;
+          })}
     </div>
-  )
+  );
 }
 
 export default BookList
